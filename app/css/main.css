@@ -311,6 +311,6 @@ main section pre {
   padding: 15px !important;
   box-sizing: border-box;
   margin-bottom: 25px;
-  height: 200px;
+  max-height: 200px;
   overflow: scroll;
 }

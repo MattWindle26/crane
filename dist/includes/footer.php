@@ -16,10 +16,15 @@
 <script src="/js/prettify.js"></script>
 <script src="/js/clipboard.min.js"></script>
 <script>
-new Clipboard('.btn', {
-    text: function(trigger) {
-        return trigger.getAttribute('aria-label');
-    }
+var copyCode = new Clipboard('.btn');
+copyCode.on('success', function(event) {
+    event.clearSelection();
+    $('.btn').css('background-color','#2ecc71');
+    event.trigger.textContent = 'Copied';
+    window.setTimeout(function() {
+        $('.btn').css('background-color','#139DD9');
+        event.trigger.textContent = 'Copy code';
+    }, 2000);
 });
 </script>
 <script>
