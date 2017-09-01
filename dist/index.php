@@ -6,9 +6,13 @@
     <div class="grid">
       <section class="navigation">
         <h2>Navigation</h2>
-        <div class="btn" data-clipboard-target=".copy-1" aria-label="Copied" >Copy code</div>
+        <div class="btn red" data-clipboard-target=".copy-1" aria-label="Copied" >Copy code</div>
         <pre class="prettyprint theme-peacocks-in-space lang-html item nav-bar copy-1">
           &lt;p&gt;Enter your code here - don't forget to escape&lt;/p&gt;
+        </pre>
+        <div class="btn red" data-clipboard-target=".copy-2" aria-label="Copied" >Copy code</div>
+        <pre class="prettyprint theme-peacocks-in-space lang-html item nav-bar copy-2">
+          &lt;p&gt;Enter your code here - don't forget to escape 2&lt;/p&gt;
         </pre>
       </section>
       <section class="banners">

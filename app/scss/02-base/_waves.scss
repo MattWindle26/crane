@@ -22,7 +22,7 @@
     position: absolute;
     width: 100%;
     overflow: hidden;
-    height: 50vh;
+    height: 60vh;
     background-image: linear-gradient(to bottom, $primaryColor 20%, darken($primaryColor, 10%) 80%);
 }
 .bgTop {
@@ -40,7 +40,7 @@
     position: absolute;
     left: 0;
     width: 200%;
-    height: 50vh;
+    height: 60vh;
     background-repeat: repeat no-repeat;
     background-position: 0 bottom;
     transform-origin: center bottom;
@@ -68,7 +68,7 @@
 }
   .title{
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     @include display(flex);
     @include align-items(center);
     @include justify-content(center);
@@ -88,11 +88,14 @@
       @include display(flex);
       @include align-items(center);
       @include justify-content(center);
-      margin-bottom: 850px;
+      // margin-bottom: 850px;
       opacity: 0;
       transition: all 2s ease 0.5s;
+      position: relative;
+      top: -400px;
       &.move{
-        margin-bottom: 20px;
+        top: 0;
+        // margin-bottom: 20px;
         opacity: 1;
       }
     }
@@ -107,6 +110,7 @@
       font-weight: 400;
       letter-spacing: 1px;
       border-radius: 5px;
+      margin-bottom: 15px;
     }
 
   }

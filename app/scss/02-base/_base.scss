@@ -29,7 +29,7 @@ p, li, a, b{
 }
 .main-content-wrapper{
   position: relative;
-  top: 50vh;
+  top: 60vh;
   @include display(flex);
   @include flex-direction(row);
 }
@@ -50,4 +50,10 @@ main{
   margin-bottom: 10px;
   font-size: 1.5rem;
   color: $white;
-}
+  transition: all 0.5s ease;
+  &:hover{
+    cursor: pointer;
+    background-color: darken($primaryColor, 10%);
+
+  }
+} //end of btn

@@ -18,11 +18,11 @@
 <script>
 var copyCode = new Clipboard('.btn');
 copyCode.on('success', function(event) {
-    event.clearSelection();
-    $('.btn').css('background-color','#2ecc71');
-    event.trigger.textContent = 'Copied';
+        event.clearSelection();
+        event.trigger.style.backgroundColor = "#2ecc71";
+        event.trigger.textContent = 'Copied';
     window.setTimeout(function() {
-        $('.btn').css('background-color','#139DD9');
+        event.trigger.style.backgroundColor = "#139DD9";
         event.trigger.textContent = 'Copy code';
     }, 2000);
 });
