@@ -1,0 +1,17 @@
+aside{
+  h2{
+    padding:  20px 15px;
+    color: $primaryColor;
+    border-bottom: 2px solid #eee;
+  }
+  nav{
+    background-color: $white;
+    @include display(flex);
+    @include flex-direction(column);
+    a{
+      padding:  20px 15px;
+      border-bottom: 2px solid #eee;
+      color: $primaryColor;
+    }
+  }
+}
