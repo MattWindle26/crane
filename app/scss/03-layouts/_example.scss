@@ -1,8 +1,0 @@
-.example{
-  background: $primaryColor;
-  @include size(100px);
-
-  @media #{$tablet}{
-    background: $grey;
-  }
-}
