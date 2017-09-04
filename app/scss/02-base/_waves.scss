@@ -102,7 +102,7 @@
     .download{
       position: relative;
       z-index: 1000;
-      opacity: 1;
+      opacity: 0;
       background-color: lighten($primaryColor, 25%);
       padding: 10px 20px;
       color: darken($primaryColor, 10%);
@@ -111,6 +111,10 @@
       letter-spacing: 1px;
       border-radius: 5px;
       margin-bottom: 15px;
+      transition: all 1.5s ease 2.2s;
+      &.fadeIn{
+        opacity: 1;
+      }
     }
 
   }

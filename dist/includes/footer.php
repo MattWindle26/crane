@@ -1,3 +1,8 @@
+<footer>
+  <p>Copyright 2017 | Physio123.co.uk</p>
+  <p><a href="#">Report an issue</a></p>
+</footer>
+
   <script src="/js/main.js" charset="utf-8"></script>
   <script src="/js/isotope.js" charset="utf-8"></script>
   <script>
@@ -23,8 +28,8 @@ copyCode.on('success', function(event) {
         event.trigger.textContent = 'Copied';
     window.setTimeout(function() {
         event.trigger.style.backgroundColor = "#139DD9";
-        event.trigger.textContent = 'Copy code';
-    }, 2000);
+        event.trigger.innerHTML = '<img src="/images/copy-content.svg" >Copy code';
+    }, 1000);
 });
 </script>
 <script>

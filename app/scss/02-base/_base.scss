@@ -51,9 +51,15 @@ main{
   font-size: 1.5rem;
   color: $white;
   transition: all 0.5s ease;
+  @include display(inline-flex);
+  @include flex-direction(row);
   &:hover{
     cursor: pointer;
     background-color: darken($primaryColor, 10%);
-
+  }
+  img{
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
   }
 } //end of btn
